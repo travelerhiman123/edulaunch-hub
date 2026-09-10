@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Youtube, MessageCircle, MapPin, Phone, Mail, Clock } from "lucide-react";
 
-import { institute } from "@/data/site";
+import { institute, programs } from "@/data/site";
 
 export function Footer() {
   return (
@@ -29,15 +29,13 @@ export function Footer() {
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">Programs</h4>
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-            <li><Link to="/programs/grade-8" className="hover:text-accent">Grade 8</Link></li>
-            <li><Link to="/programs/grade-9" className="hover:text-accent">Grade 9</Link></li>
-            <li><Link to="/programs/grade-10" className="hover:text-accent">Grade 10</Link></li>
-            <li><Link to="/programs/ssc" className="hover:text-accent">SSC</Link></li>
-            <li><Link to="/programs/cbse" className="hover:text-accent">CBSE</Link></li>
-            <li><Link to="/programs/icse" className="hover:text-accent">ICSE</Link></li>
-            <li><Link to="/programs/jee-main" className="hover:text-accent">JEE Main</Link></li>
-            <li><Link to="/programs/mht-cet" className="hover:text-accent">MHT-CET</Link></li>
-            <li><Link to="/programs/neet" className="hover:text-accent">NEET</Link></li>
+            {programs.map((p) => (
+              <li key={p.slug}>
+                <Link to="/programs/$slug" params={{ slug: p.slug }} className="hover:text-accent">
+                  {p.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 

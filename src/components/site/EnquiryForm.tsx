@@ -20,7 +20,17 @@ const fieldClass =
   "w-full rounded-xl border border-input bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-accent focus:ring-2 focus:ring-accent/30";
 const labelClass = "mb-1.5 block text-sm font-medium text-primary";
 
-type Errors = Record<string, string>;
+/**
+ * Explicit field keys rather than Record<string, string>: the project sets
+ * noPropertyAccessFromIndexSignature, which forbids dot access on index signatures.
+ */
+type Errors = {
+  studentName?: string;
+  mobile?: string;
+  email?: string;
+  grade?: string;
+  program?: string;
+};
 
 export function EnquiryForm() {
   const [errors, setErrors] = useState<Errors>({});
