@@ -13,6 +13,13 @@ const navItems = [
   { to: "/contact", label: "Contact" },
 ] as const;
 
+/** First letter of the institute name, ignoring any leading "[" placeholder bracket. */
+const logoInitial =
+  institute.name
+    .replace(/[^A-Za-z]/g, "")
+    .charAt(0)
+    .toUpperCase() || "A";
+
 export function Header() {
   const [open, setOpen] = useState(false);
 
@@ -21,7 +28,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:h-18">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
           <span className="grid size-9 place-items-center rounded-xl bg-navy-gradient font-display text-sm font-bold text-primary-foreground">
-            A
+            {logoInitial}
           </span>
           <span className="font-display text-base font-bold leading-tight text-primary sm:text-lg">
             {institute.name}
