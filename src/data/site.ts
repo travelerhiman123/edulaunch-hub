@@ -4,15 +4,15 @@
  */
 
 export const institute = {
-  name: "[Coaching Institute Name]",
-  shortName: "[Institute]",
+  name: "Himanshu Sir's Group Tuition",
+  shortName: "HY ACADEMY",
   tagline: "Building strong foundations. Creating confident learners.",
   address: "[Institute Address, City, Maharashtra – PIN]",
-  phone: "[Phone Number]",
+  phone: "[7977643454]",
   phoneHref: "tel:+910000000000",
-  whatsapp: "[WhatsApp Number]",
+  whatsapp: "[7977643454]",
   whatsappHref: "https://wa.me/910000000000",
-  email: "[Email Address]",
+  email: "[travelerhiman123@gmail.com]",
   emailHref: "mailto:hello@example.com",
   hours: "[Working Hours – e.g. Mon–Sat, 8:00 AM – 8:00 PM]",
   mapEmbedSrc: "", // paste a Google Maps embed URL here
@@ -284,31 +284,31 @@ export const testimonials = [
 /** Placeholder faculty — replace with real profiles. */
 export const faculty = [
   {
-    name: "[Faculty Name]",
+    name: "Ramkumar D. Yadav",
     subject: "Physics",
-    qualification: "[Qualification]",
-    experience: "[XX] years",
+    qualification: "M.Sc. in Physics",
+    experience: "15 years",
     bio: "[Short introduction about teaching approach and experience.]",
   },
   {
-    name: "[Faculty Name]",
+    name: "Himanshu Yadav",
     subject: "Mathematics",
-    qualification: "[Qualification]",
-    experience: "[XX] years",
+    qualification: "B.E.Mechanical Engineering",
+    experience: "10 years",
     bio: "[Short introduction about teaching approach and experience.]",
   },
   {
-    name: "[Faculty Name]",
+    name: "Dr.Sushila Yadav ",
     subject: "Chemistry",
-    qualification: "[Qualification]",
-    experience: "[XX] years",
+    qualification: "Phd in Chemistry",
+    experience: "15 years",
     bio: "[Short introduction about teaching approach and experience.]",
   },
   {
-    name: "[Faculty Name]",
+    name: "Dr. Deepak Yadav",
     subject: "Biology",
-    qualification: "[Qualification]",
-    experience: "[XX] years",
+    qualification: "Phd in Biology",
+    experience: "10 years",
     bio: "[Short introduction about teaching approach and experience.]",
   },
 ];
